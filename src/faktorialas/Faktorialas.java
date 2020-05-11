@@ -8,15 +8,16 @@ public class Faktorialas {
         }
         return a * faktorialas(a - 1);
     }
-
-    public static void main(String[] args) {
-        System.out.println(faktorialas(5));
-        
+    public static int faktorialas2(int a){
         int fakt = 1;
-        for (int i = 5; i >= 1 ; i--) {
+        for (int i = a; i >= 1 ; i--) {
             fakt *= i;
         }
-        System.out.println(fakt);
+        return fakt;
+    }
+    public static void main(String[] args) {
+        System.out.println(faktorialas(5));
+        System.out.println(faktorialas2(5));
     }
     
 }
