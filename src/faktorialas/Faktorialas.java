@@ -10,8 +10,12 @@ public class Faktorialas {
     }
     public static int faktorialas2(int a){
         int fakt = 1;
-        for (int i = a; i >= 1 ; i--) {
-            fakt *= i;
+        if(a != 0){
+            for (int i = a; i >= 1 ; i--) {
+                fakt *= i;
+            }
+        } else {
+            return 1;
         }
         return fakt;
     }
